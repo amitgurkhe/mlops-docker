@@ -1,0 +1,22 @@
+1. to create new environment
+  - conda create -p <env name> python==3.8 -y
+2. to activate new env 
+   - conda activate <env name> 
+   note - in terminal use command prompt instead of powershell. 
+3. To initialise GIt
+	- git init
+4. git add <file_name>
+	- to sync with git
+5. git commit -m "<commit name>" 
+	- to give a name to commit.
+6. git branch -M main
+ 	- select a branch to make a commit to
+7. git remote add origin <link of repo>
+	- to connect to the repo
+8. git push -u origin main
+	- to push the file from origin (local) to main (github).
+9. git pull
+	- to update changes from github into local machine.
+10. .gitignore  --> to not clone some files on github 
+11. -e . --> used to run setup.py whenever requirement.txt is run.
+12. tutorial 8 --> creating a pipelines
