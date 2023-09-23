@@ -1,3 +1,4 @@
+################### GITHUB ###################
 1. to create new environment
   - conda create -p <env name> python==3.8 -y
 2. to activate new env 
@@ -20,3 +21,30 @@
 10. .gitignore  --> to not clone some files on github 
 11. -e . --> used to run setup.py whenever requirement.txt is run.
 12. tutorial 8 --> creating a pipelines
+
+############################ DOCKER #########################
+1. docker images   ---> to view docker images
+2. docker ps ----> to view the container
+3. docker build -t <image name> OR docker build -t <username/image name> --> to build a image
+   from dockerfile.
+4. docker image rm -f <image name> ---> to remove a built image.
+5. docker tag <old image name> <new image name> ---> this creates a image with new name, here
+   we need to delete the old image with command 4.
+6. docker push <image name:tag> ---> to push the image to docker hub . tag is used for versioning.
+7. docker stop <container ID> --> can't be stopped with the container name, use container ID
+8. docker run -d -p <host port>:<contasiner port> <image name> --> to run the container in detach mode
+   (-d), no details displayed.
+
+######################### AWS ECR deployment############################
+1. create IAM user with EC2 and ECR permissions.
+2. Create a ECR repository as private.
+3. create EC2 instance 
+4. update, upgrade and install docker. 
+   - sudo apt-get update -y
+   - sudo apt-get upgrade
+   - curl -fsSL https://get.docker.com -o get-docker.sh
+   - sudo sh get-docker.sh
+   - sudo usermod -aG docker ubuntu
+   - newgrp docker
+5. from github actions - Runners 
+
